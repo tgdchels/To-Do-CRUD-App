@@ -1,0 +1,74 @@
+<html ng-app="myApp">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="lib/onsen/js/onsenui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+	<script src="scripts/app.js"></script>
+	<link rel="stylesheet" href="lib/onsen/css/onsenui.css"/>
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css"/>
+  <script src="lib/onsen/js/onsenui.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sacramento" rel="stylesheet">
+</head>
+<body ng-controller="myCtrl">
+
+
+
+
+
+<div class="proto">
+
+
+<div class="head">
+
+<a id="ham_menu" href="#" title="Menu">
+  <span class="line line-1"></span>
+  <span class="line line-2"></span>
+  <span class="line line-3"></span>
+</a>
+
+<h5 class="username">chelsea</h5>
+
+</div>
+<h1 class="title">to-do list</h1>
+<ons-card class="todo_cards">
+<div >
+
+	<ul>
+		<li ng-repeat="todo in todos"><span ng-click="deleteTodo(todo._id)">X</span> &nbsp; {{ todo.text }}</li>
+	</ul>
+
+	<form>
+		<input type="text" placeholder="add to-do" modifier="material" ng-model="formData.text" /><br /><br />
+<ons-button type="submit" ng-click="createTodo()">+</ons-button>
+	</form>
+
+</div> <!-- todo cards -->
+</ons-card>
+
+
+
+<ons-dialog id="dialog-1">
+  <div style="text-align: center; padding: 10px;">
+    <p>
+      This is a dialog.
+      <p>
+
+        <p>
+          <ons-button onclick="hideDialog('dialog-1')">Close</ons-button>
+        </p>
+  </div>
+</ons-dialog>
+
+
+<div class="foot">
+<ul>
+  <li><h5 class="completed">completed</h5></li>
+  <li><h5 class="tasks">tasks</h5></li>
+  <li><h5 class="deleted">deleted</h5></li>
+  </ul>
+</div>
+
+</div> <!-- proto -->
+<div id="app"></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+	margin:0;
+	width:412px;
+	height:660px;
+	font-family: 'Open Sans', sans-serif;
+	color:rgba(0,0,0,0.6);
+}
+.proto {
+	background-color: rgba(231, 175, 156, 0.5);
+	margin-left: auto;
+	margin-right: auto;
+	width:412px;
+	height:660px;
+	margin-bottom:0;
+}
+.head {
+	height:48px;
+	width: auto;
+	background-color: rgba(231, 175, 156, 1);
+	box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+}
+#ham_menu {
+  width: 50px;
+  height: 14px;
+  position: relative;
+  display: block;
+  top:15px;
+  left:20px;
+}
+#ham_menu .line {
+  display: block;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  border-radius: 1px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+#ham_menu .line.line-1 {
+  width: 28px;
+  height: 2px;
+  top: 0;
+}
+#ham_menu .line.line-2 {
+  width: 36px;
+  height: 2px;
+  top: 50%;
+}
+#ham_menu .line.line-3 {
+  width: 20px;
+  height: 2px;
+  top: 100%;
+}
+#ham_menu:hover .line-1, #ham_menu:focus .line-1 {
+  width:20px;
+}
+#ham_menu:hover .line-2, #ham_menu:focus .line-2 {
+  width:28px;
+}
+#ham_menu:hover .line-3, #ham_menu:focus .line-3 {
+  width: 36px;
+}
+.username {
+	float:right;
+	color:#fff;
+	margin:auto;
+	position: relative;
+	right:20px;
+	font-family: 'Sacramento', cursive;
+	font-size:28px;
+	margin-top:-5px;
+}
+
+.title {
+	font-size:46px !important;
+	margin:20px 10px 00px 10px !important;
+	text-align: center !important;
+	font-family: 'Sacramento', cursive;
+	color:#fff;
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+}
+
+.todo_cards {
+	position:relative !important;
+	width:300px !important;
+	height:420px !important;
+	background-color:#fff !important;
+	box-shadow:-4px 2px 10px rgba(0,0,0,0.2) !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+body > div.proto > ons-card > div > ul {
+	padding-left:20px !important;
+}
+
+span {
+	font-family: roboto,sans-serif !important;
+	font-size:8px !important;
+}
+
+body > div.proto > ons-card > div > form > input {
+	position: absolute !important;
+	top:370px !important;
+	border:none !important;
+	border-bottom: 1px solid rgba(0,0,0,1) !important;
+	left:30px !important;
+	font-family: roboto, sans-serif !important;
+	padding: 0px 0px 5px 10px !important;
+	opacity:0.6 !important;
+}
+
+.button {
+	width:50px !important;
+	height:50px !important;
+	text-align:center !important;
+	padding:9px !important;
+	border-radius: 50% !important;
+	position: absolute !important;
+	left:215px !important;
+	top:340px !important;
+	box-shadow:4px 2px 7px rgba(0,0,0,0.2), -2px 4px 4px rgba(0,0,0,0.1) !important;
+	background-color: rgb(2, 209, 184) !important;
+}
+
+.foot {
+	display:inline-block;
+	height:58px;
+  	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	width: auto;
+	background-color: rgba(231, 175, 156, 1);
+	box-shadow:0px -2px 10px rgba(0,0,0,0.2);
+}
+.foot ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    height:50px;
+}
+.foot ul li {
+    float: left;
+	text-align: center;
+	color:#fff;
+	width:33%;
+
+}
+.foot ul li h5 {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;	
+    margin: auto;
+}
+.fab {
+	width:68px !important;
+	height: 68px !important;
+	font-size: 2.5em !important;
+	background-color: #bee1c5 !important;
+	box-shadow:2px -2px 10px rgba(0,0,0,0.2) !important;
+}
+.fab__icon {
+	top:10px !important;
+	left:-8px !important;
+}
+.fab--bottom__left {
+	bottom:56px !important;
+	left:0 !important;
+	border-radius: 0px 100px 0px 0px !important;
+}
+ons-fab, ons-speed-dial {
+	z-index: 0 !important;
+}
+ul li {
+	list-style-type: none;
+	cursor: pointer;
+}
